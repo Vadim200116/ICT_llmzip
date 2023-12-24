@@ -1,0 +1,9 @@
+1. Install requirenments: pip3 install -r requirenments.txt
+2. Load tokenizer and LLaMa weights. You need only 7B model params. We assume you will have directory with file tokenizer.model and directory 7B inside.
+ magnet:?xt=urn:btih:ZXXDAUWYLRUXXBHUYEMS6Q5CE5WA3LVA&dn=LLaMA
+3. torchrun main.py -s ...  -f ... -d ...
+
+  -s  Directory with tokenizer and model weights  [required]
+  -f  Path to file to be compressed  [required]
+  -w  Window length 64 default
+  -d  Directory to save compressed file  [required]
